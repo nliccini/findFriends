@@ -123,7 +123,7 @@ end
         montage = imread(montage);
     end
     [rows, cols, ~] = size(montage);
-    increment = 400;
+    [increment, ~, ~] = size(read(imgset(1),1));
     incrementr = increment;
     incrementc = increment;
     m=1;
