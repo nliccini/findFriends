@@ -77,7 +77,7 @@ end
         filepath = [fullfile(dir, folderName), '/', img3Name]; 
         imwrite(faces(ndx).Image3, filepath);
         % Repeat for Image 4
-        img4Name = faces(ndx).Image3Name;
+        img4Name = faces(ndx).Image4Name;
         filepath = [fullfile(dir, folderName), '/', img4Name]; 
         imwrite(faces(ndx).Image4, filepath);
         % Repeat for Image 5
