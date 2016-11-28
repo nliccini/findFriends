@@ -361,3 +361,24 @@ function [montage] = ca2img(imgs, numinrow)
         end
     end
 end
+
+% Helper function to create an image out of input text and color
+function [words] = str2img(str, color)
+    load font;
+    img = [];
+    color(color == 0) = 1;
+    for i = str
+        img = [img, font{double(i)}];
+    end
+    bgMask = ~img;
+    r = img*color(1);
+    r(bgMask) = 0;
+
+    g = img*color(2);
+    g(bgMask) = 0;
+
+    b = img*color(3);
+    b(bgMask) = 0;
+
+    words = uint8(cat(3, r, g, b));
+end
