@@ -13,12 +13,12 @@ function [outstr] = findFriends(montage)
 %   person displayed at the bottom
 %   (uint8) The first stored image of the specified person
 %
-% NOTE: Please have at least 3 different images of each person in the same
-% folder to include in the database when creating a new one
+% NOTE: Please have at least 5 different images of each person in the same
+% directory as findFriends when creating a new database
 %
 % NOTE: This machine learning algorithm is reported to have only a 91%
 % acurracy rating, so if a group of 9-12 images are analyzed, expect 1-3 to
-% be incorrect
+% be incorrectly labeled
 
 %% Output FileName Creation
 if ischar(montage)
