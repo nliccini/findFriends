@@ -398,4 +398,4 @@ function [] = seeMore(question, faces)
         % Just ask again if their input is invalid
         seeMore(question, faces);
     end
-end
+end 
