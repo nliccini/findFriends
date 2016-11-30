@@ -10,6 +10,6 @@ A MATLAB function that performs facial recognition
 - Call findFriends and make your custom database (REMEMBER TO HAVE 5 IMAGES FOR IT)
 - Save your database as anything you want!
 
-## Download Sample Images for Testing
+## Download Sample Images for Testing:
 Download the ATT Face Database for trying this out on your own!
 http://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html
