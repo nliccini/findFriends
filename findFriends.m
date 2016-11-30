@@ -209,8 +209,8 @@ end
                 % Put that chunck of the face photo back into the face
                 friend((end-trows)+1:end,:,clr) = layer1;
                 % Store each image as a new element in a cell array
-                friends = [friends, {friend}];
             end
+            friends = [friends, {friend}];
         end
     end
     % Compute how many images were in each row of the montage
